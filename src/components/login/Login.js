@@ -6,7 +6,7 @@ import Proptypes from 'prop-types';
 
 import { tokenToLocalStorage } from '../../services/api';
 import { gettingToken, dispatchQuestions, infoLogin, resetScore } from '../../redux/actions';
-import Gear from '../../gear.png';
+import Gear from '../../images/gear.png';
 
 import './Login.css';
 
@@ -59,9 +59,9 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login-component">
-        <Link to="/settings">
+        {/* <Link to="/settings">
           <img data-testid="btn-settings" className="gear" src={Gear} alt="logo" />
-        </Link>
+        </Link> */}
         <input
           onChange={(e) => this.setState({ name: e.target.value })}
           type="text"

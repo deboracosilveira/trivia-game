@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 import { updateScore } from '../../redux/actions';
 import { Header } from '../../components';
+import loading from '../../images/loading.png';
 import './Question.css';
 
 const shuffleAnswers = (allAnswers) => {
@@ -108,7 +109,6 @@ class Question extends Component {
 
   updateRanking() {
     const { name, assertions, score, gravatarEmail } = this.props;
-    console.log(assertions);
     const state = {
       player: {
         name,
@@ -197,7 +197,7 @@ class Question extends Component {
   render() {
     const { isFetching } = this.props;
     const { redirect, disabled, hurry } = this.state;
-    if (isFetching) return <div>Loading...</div>;
+    if (isFetching) return <img src={loading} alt="loading" className="loading-icon" />;
     if (redirect) {
       return <Redirect to="/feedback" />;
     }

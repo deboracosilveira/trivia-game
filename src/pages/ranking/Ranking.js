@@ -8,8 +8,8 @@ function renderRanking(ranking) {
       {ranking
         .sort((a, b) => b.score - a.score)
         .map((player, index) => (
-          <li className="flexbox">
-            <img src={player.picture} alt={player.name} />
+          <li className="player">
+            <img className="player-pic" src={player.picture} alt={player.name} />
             <p data-testid={`player-name-${index}`}>{player.name}</p>
             <p data-testid={`player-score-${index}`}>{player.score}</p>
           </li>
@@ -23,14 +23,14 @@ const Ranking = () => {
 
   return (
     <div className="ranking-container">
-      <h3 className="ranking" data-testid="ranking-title">
+      <h3 className="ranking-title" data-testid="ranking-title">
         Ranking
       </h3>
       <div className="list-container">{renderRanking(ranking)}</div>
       <div>
-        <button className="voltar-inicio" type="button" data-testid="btn-go-home">
-          <Link to="/">Voltar ao Início</Link>
-        </button>
+        <Link to="/" className="btn" data-testid="btn-go-home">
+          Voltar ao Início
+        </Link>
       </div>
     </div>
   );

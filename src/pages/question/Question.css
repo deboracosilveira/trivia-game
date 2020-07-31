@@ -1,3 +1,9 @@
+.loading-icon {
+  position: absolute;
+  top: 30%;
+  height: 20vh;
+}
+
 .question-page-container {
   align-items: center;
   display: flex;
@@ -11,12 +17,12 @@
   border-radius: 20px;
   margin-bottom: 30px;
   padding: 20px 30px;
-  width: 470px;
+  width: 320px;
 }
 
 .question {
   color: rgb(41, 77, 119);
-  font-size: 22px;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: justify;
 }
@@ -47,7 +53,7 @@
   border: 1px solid lightgray;
   border-radius: 10px;
   color: gray;
-  font-size: 18px;
+  font-size: 1.2rem;
   height: 80px;
   margin-bottom: 15px;
 }
@@ -59,8 +65,7 @@
 }
 
 .answers-option:disabled {
-  background-color: rgb(189, 189, 189);
-  color: black;
+  background-color: rgb(221, 220, 220);
   cursor: default;
   opacity: 0.7;
   transition: none;
@@ -86,7 +91,7 @@
   border: 1px solid rgb(239, 154, 154);
   border-radius: 10px;
   color: white;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 25px;
 }
@@ -97,7 +102,7 @@
   border-radius: 10px;
   color: white;
   font-family: Nunito, sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 35px;
 }
@@ -115,7 +120,6 @@
 }
 
 @keyframes beatingHeart {
-
   0% {
     opacity: 1;
     transform: scale(1);

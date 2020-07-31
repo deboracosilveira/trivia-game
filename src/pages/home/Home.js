@@ -1,6 +1,6 @@
 import React from 'react';
 import { Login } from '../../components';
-import Logo from '../../trivia.png';
+import Logo from '../../images/trivia.png';
 import './Home.css';
 
 const Home = () => (

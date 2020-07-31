@@ -3,10 +3,10 @@
   border: 1px solid rgb(41, 77, 119);
   border-radius: 20px;
   color: rgb(41, 77, 119);
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 30px;
   padding: 20px 30px;
-  width: 470px;
+  width: 320px;
 }
 
 .feedback-scoreboard {
@@ -17,7 +17,7 @@
 
 .message {
   color: rgb(41, 77, 119);
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 1px;
 }
@@ -25,6 +25,6 @@
 .gif {
   border: 5px solid rgb(252, 168, 47);
   border-radius: 10px;
-  height: 300px;
+  height: 35vh;
   margin: 20px;
 }
