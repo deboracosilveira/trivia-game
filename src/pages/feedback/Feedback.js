@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Header } from '../../components';
-import Links from '../../components/Links';
+import Links from '../../components/links/Links';
 import './Feedback.css';
 import thatsGreat from '../../images/thatsGreat.gif';
 import notGreat from '../../images/notGreat.gif';

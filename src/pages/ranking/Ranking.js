@@ -4,14 +4,18 @@ import './Ranking.css';
 
 function renderRanking(ranking) {
   return (
-    <ul>
+    <ul className="list-container">
       {ranking
         .sort((a, b) => b.score - a.score)
         .map((player, index) => (
           <li className="player">
             <img className="player-pic" src={player.picture} alt={player.name} />
-            <p data-testid={`player-name-${index}`}>{player.name}</p>
-            <p data-testid={`player-score-${index}`}>{player.score}</p>
+            <p className="player-name" data-testid={`player-name-${index}`}>
+              {player.name}
+            </p>
+            <p className="player-score" data-testid={`player-score-${index}`}>
+              {player.score}
+            </p>
           </li>
         ))}
     </ul>
@@ -26,10 +30,10 @@ const Ranking = () => {
       <h3 className="ranking-title" data-testid="ranking-title">
         Ranking
       </h3>
-      <div className="list-container">{renderRanking(ranking)}</div>
+      {renderRanking(ranking)}
       <div>
         <Link to="/" className="btn" data-testid="btn-go-home">
-          Voltar ao Início
+          PLAY AGAIN
         </Link>
       </div>
     </div>

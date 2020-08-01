@@ -165,10 +165,10 @@ class Question extends Component {
     return (
       <div className="question">
         <span data-testid="question-category" className="question-category">
-          {questions[questionNumber].category}
+          {decodeURIComponent(questions[questionNumber].category)}
         </span>
         <p data-testid="question-text" className="question-text">
-          {questions[questionNumber].question}
+          {decodeURIComponent(questions[questionNumber].question)}
         </p>
       </div>
     );
@@ -188,7 +188,7 @@ class Question extends Component {
           key={answer.answer}
           disabled={disabled}
         >
-          {answer.answer}
+          {decodeURIComponent(answer.answer)}
         </button>
       );
     });
@@ -209,7 +209,7 @@ class Question extends Component {
           <div className="answers-options">{this.renderAnswers()}</div>
           <div className="timer-and-next-button">
             <div className={hurry && !disabled ? 'hurry timer' : 'timer'}>
-              Tempo: {this.state.seconds}
+              TIME: {this.state.seconds}
             </div>
             <button
               type="button"
@@ -218,7 +218,7 @@ class Question extends Component {
               onClick={this.nextQuestion}
               disabled={!disabled}
             >
-              Próxima
+              NEXT
             </button>
           </div>
         </div>

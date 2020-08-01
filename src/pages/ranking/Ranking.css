@@ -11,18 +11,19 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Nunito, sans-serif;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
   justify-content: center;
   margin: 30px 0;
   padding-bottom: 35px;
   top: 50px;
-  width: 320px;
+  width: 85vw;
 }
 
 .ranking-title {
   font-family: Nunito, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin-top: 10%;
 }
 
 .btn {
@@ -37,34 +38,46 @@ body {
   text-decoration: none;
 }
 
-.player {
+.list-container {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
-  margin-right: 100px;
-  padding: 30px;
-  width: 200px;
+  flex-direction: column;
+  padding: 0;
+  width: 80%;
+}
+
+.player {
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  padding: 2%;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .player-pic {
-  height: 10vh;
   border-radius: 50%;
+  height: 8vh;
 }
 
-.list-container {
-  margin-bottom: 10px;
-}
-
-.list-container ul li {
-  border-radius: 20px;
-  border: 1px solid lightgray;
-  height: 30px;
-  margin-bottom: 5px;
-  margin-left: 50px;
-}
-
-.list-container ul li p {
-  font-size: 1.2rem;
-  padding-left: 20px;
+.player-name {
+  font-size: 1rem;
+  margin: 0;
   text-transform: uppercase;
+  width: 40%;
+  word-wrap: break-word;
+}
+
+.player-score {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .ranking-container {
+    width: 700px;
+  }
 }

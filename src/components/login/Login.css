@@ -11,10 +11,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Nunito, sans-serif;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: 20px 50px;
-  width: 200px;
+  padding: 5vh;
+  width: 60vw;
 }
 
 .gear {
@@ -33,9 +33,10 @@ body {
   border-radius: 10px;
   color: gray;
   font-family: Nunito, sans-serif;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
   padding: 10px;
+  width: 60vw;
 }
 
 .logion-button {
@@ -44,7 +45,7 @@ body {
   border-radius: 10px;
   color: white;
   font-family: Nunito, sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 35px;
 }
@@ -52,3 +53,13 @@ body {
 .logion-button:disabled {
   background-color: rgb(254, 213, 155);
 }
+
+@media screen and (min-width: 800px) {
+  .login-component {
+    width: 300px;
+  }
+
+  .login-input {
+    width: 300px;
+  }
+} 

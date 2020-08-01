@@ -3,10 +3,14 @@
   border: 1px solid rgb(41, 77, 119);
   border-radius: 20px;
   color: rgb(41, 77, 119);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   margin-bottom: 30px;
   padding: 20px 30px;
-  width: 320px;
+  width: 80vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
 }
 
 .feedback-scoreboard {
@@ -17,8 +21,7 @@
 
 .message {
   color: rgb(41, 77, 119);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
   margin: 1px;
 }
 
@@ -27,4 +30,10 @@
   border-radius: 10px;
   height: 35vh;
   margin: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .feedback-container {
+    width: 700px;
+  }
 }

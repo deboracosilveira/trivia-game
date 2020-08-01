@@ -10,7 +10,7 @@ export const tokenToLocalStorage = () =>
 
 // Pegar perguntas e respostas
 export async function getQuestions(token) {
-  return fetch(`https://opentdb.com/api.php?amount=5&token=${token}`).then((questions) =>
+  return fetch(`https://opentdb.com/api.php?amount=5&encode=url3986&token=${token}`).then((questions) =>
     questions.json().then((json) => (questions.ok ? Promise.resolve(json) : Promise.reject(json))),
   );
 }

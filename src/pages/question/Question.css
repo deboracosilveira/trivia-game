@@ -1,6 +1,6 @@
 .loading-icon {
   position: absolute;
-  top: 30%;
+  top: 35%;
   height: 20vh;
 }
 
@@ -17,12 +17,12 @@
   border-radius: 20px;
   margin-bottom: 30px;
   padding: 20px 30px;
-  width: 320px;
+  width: 80vw;
 }
 
 .question {
   color: rgb(41, 77, 119);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: justify;
 }
@@ -65,9 +65,8 @@
 }
 
 .answers-option:disabled {
-  background-color: rgb(221, 220, 220);
+  background-color: rgb(245, 243, 243);
   cursor: default;
-  opacity: 0.7;
   transition: none;
 }
 
@@ -143,5 +142,11 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .question-and-answers {
+    width: 700px;
   }
 }

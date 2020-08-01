@@ -9,7 +9,7 @@ const Header = ({ name, gravatarEmail, score, assertions }) => {
   return (
     <div className="header">
       <p data-testid="header-player-name">Player: {name}</p>
-      <p data-testid="header-score">{score}</p>
+      <p data-testid="header-score">Score: {score}</p>
       <img
         className="header-profile-picture"
         data-testid="header-profile-picture"
