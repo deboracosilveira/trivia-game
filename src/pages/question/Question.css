@@ -90,7 +90,7 @@
   border: 1px solid rgb(239, 154, 154);
   border-radius: 10px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 15px 25px;
 }
@@ -101,7 +101,7 @@
   border-radius: 10px;
   color: white;
   font-family: Nunito, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 15px 35px;
 }
@@ -147,6 +147,14 @@
 
 @media screen and (min-width: 800px) {
   .question-and-answers {
-    width: 650px;
+    width: 550px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .answers-option {
+    font-size: 1rem;
   }
 }

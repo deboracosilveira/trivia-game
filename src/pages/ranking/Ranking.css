@@ -72,12 +72,16 @@ body {
 }
 
 .player-score {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
 @media screen and (min-width: 800px) {
   .ranking-container {
-    width: 650px;
+    width: 550px;
+  }
+
+  .ranking-title {
+    font-size: 1.3rem;
   }
 }

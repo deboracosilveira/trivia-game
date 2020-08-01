@@ -56,10 +56,10 @@ body {
 
 @media screen and (min-width: 800px) {
   .login-component {
-    width: 250px;
+    width: 200px;
   }
 
   .login-input {
-    width: 250px;
+    width: 200px;
   }
 } 
