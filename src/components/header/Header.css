@@ -6,7 +6,7 @@
   color: rgb(41, 77, 119);
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   justify-content: space-between;
   margin-bottom: 2%;
@@ -29,6 +29,6 @@
 
 @media screen and (min-width: 800px) {
   .header {
-    width: 700px;
+    width: 650px;
   }
 }

@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Nunito, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 5vh;
   width: 60vw;
@@ -45,7 +45,7 @@ body {
   border-radius: 10px;
   color: white;
   font-family: Nunito, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   padding: 15px 35px;
 }
@@ -56,10 +56,10 @@ body {
 
 @media screen and (min-width: 800px) {
   .login-component {
-    width: 300px;
+    width: 250px;
   }
 
   .login-input {
-    width: 300px;
+    width: 250px;
   }
 } 

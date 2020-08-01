@@ -22,7 +22,7 @@
 
 .question {
   color: rgb(41, 77, 119);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: justify;
 }
@@ -147,6 +147,6 @@
 
 @media screen and (min-width: 800px) {
   .question-and-answers {
-    width: 700px;
+    width: 650px;
   }
 }
